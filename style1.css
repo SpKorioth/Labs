@@ -1,6 +1,8 @@
 body
 {
 	text-align: center;
+	border-width: 2px;
+	border-style: solid;
 }
 
 dl
@@ -25,18 +27,6 @@ h1, h2, h3
 h2, h3
 {text-decoration: underline;}
 
-.email
-{text-decoration: none;}
-
-#wrapper
-{
-	margin-left: auto;
-	margin-right: auto;
-	width: 80%;
-	border-width: 2px;
-	border-style: solid;
-}
-
 nav
 {
 	background-color: black;
@@ -57,7 +47,10 @@ nav a:hover, nav a:active
 }
 
 header
-{background-color:LightSlateGrey; padding: 1px;}
+{
+	background-color:LightSlateGrey;
+	padding: 1px;
+}
 
 main
 {
