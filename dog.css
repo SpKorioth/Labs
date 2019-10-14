@@ -1,3 +1,11 @@
+@media only screen and (max-width: 600px)
+{
+	nav a
+	{
+	  width: 100%;
+	}
+}
+
 html {text-align: center; font-family: "Times New Roman", Times, Serif; padding: 0; margin: 0; background-color: LightCyan;}
 h1, h2, h3, h4, nav {font-family: "Arial", sans-serif;}
 
