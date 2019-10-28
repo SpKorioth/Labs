@@ -3,7 +3,7 @@
 <head>
 <title>A Dog's Life - Services</title>
 <link rel="stylesheet" href="dog.css"/>
-<meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0"> 
+<meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0">
 </head>
 <body>
 <div id=wrapper>
@@ -29,6 +29,46 @@ Phasellus efficitur maximus convallis. Donec sed massa at ligula hendrerit rhonc
   <li>Quisque eu est leo. Phasellus suscipit urna odio, nec suscipit nulla sodales vitae.</li>
   <li>Vestibulum vehicula tempus quam a rhoncus. Pellentesque pharetra venenatis leo nec aliquam.</li>
 </ul>
+
+<h3>Pricing</h3>
+<table>
+  <tr>
+    <th>Service</th>
+    <th>Description</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td>Haircut</td>
+    <td>Includes a haircut and hair treatment.</td>
+    <td>$$</td>
+  </tr>
+  <tr>
+    <td>Hair treatment</td>
+    <td>Included in haircut.</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>Nail trim</td>
+    <td>Trimming and filing of nails.</td>
+    <td>$</td>
+  </tr>
+</table><br>
+
+<h3>Request an appointment</h3>
+<form action="http://webdevbasics.net/scripts/demo.php" method="post">
+  *Last name: <input type="text" name="lastname"><br>
+  *First name: <input type="text" name="firstname"><br>
+  *Email: <input type="email" name="email"><br>
+  *Phone number: <input type="tel" name="phone"><br>
+  *Special instructions: <br>
+  <textarea cols="60" rows="5" name="instructions"></textarea><br>
+  *Services: <br>
+  <input type="checkbox" value="service1"> haircut <br>
+  <input type="checkbox" value="service2"> hair treatment <br>
+  <input type="checkbox" value="service3"> nail trim <br>
+  <input type="reset" value="reset"><input type="submit" value="submit">
+</form>
+
 </main>
 <footer>
 	<small>

@@ -5,6 +5,11 @@ dt {font-weight: bold;}
 
 ol, ul {list-style-position: outside;}
 
+table {border-collapse: collapse;}
+td, th {border-right: 1px solid white;}
+th {background-color: LightCyan;}
+tr:nth-child(even){background-color: Gainsboro;}
+
 .contact {border: solid; border-width: 1px;}
 .contact img {width: 10%; float: left;}
 dt {background-color: Gainsboro;}
