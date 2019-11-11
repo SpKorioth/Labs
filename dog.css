@@ -10,8 +10,8 @@ td, th {border-right: 1px solid white; padding: .5em .5em;}
 th {background-color: LightCyan;}
 tr:nth-child(even){background-color: Gainsboro;}
 
-.contact {border: solid; border-width: 1px;}
-.contact img {width: 10%; float: left;}
+.contact {border: solid; border-width: 1px; clear: left; overflow: auto;}
+.contact img {max-width: 10%; float: left;}
 dt {background-color: Gainsboro;}
 dl {margin-left: 12%;}
 
@@ -56,6 +56,10 @@ nav a
 		border-top: solid;
 		border-color: black;
 		border-width: 1px;
+	}
+	.contact img
+	{
+		float: none; max-width: 100%;
 	}
 }
 
