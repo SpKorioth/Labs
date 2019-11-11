@@ -38,34 +38,34 @@ Phasellus efficitur maximus convallis. Donec sed massa at ligula hendrerit rhonc
     <th>Price</th>
   </tr>
   <tr>
-    <td>Haircut</td>
+    <td>Basic</td>
+    <td>Includes hair treatment.</td>
+    <td>$</td>
+  </tr>
+  <tr>
+    <td>Deluxe</td>
     <td>Includes a haircut and hair treatment.</td>
     <td>$$</td>
   </tr>
   <tr>
-    <td>Hair treatment</td>
-    <td>Included in haircut.</td>
-    <td>$</td>
-  </tr>
-  <tr>
-    <td>Nail trim</td>
-    <td>Trimming and filing of nails.</td>
-    <td>$</td>
+    <td>Deluxe +</td>
+    <td>Includes a haircut, hair treatment, <br>and trimming and filing of nails.</td>
+    <td>$$$</td>
   </tr>
 </table><br>
 
 <h3>Request an appointment</h3>
 <form action="http://webdevbasics.net/scripts/demo.php" method="post">
-  *Last name: <input type="text" name="lastname"><br>
-  *First name: <input type="text" name="firstname"><br>
-  *Email: <input type="email" name="email"><br>
-  *Phone number: <input type="tel" name="phone"><br>
-  *Special instructions: <br>
-  <textarea cols="60" rows="5" name="instructions"></textarea><br>
+  *Last Name: <input type="text" name="lastname" placeholder="Last Name" required><br>
+  *First Name: <input type="text" name="firstname" placeholder="First Name" required><br>
+  *Email: <input type="email" name="email" placeholder="email@email.com" required><br>
+  *Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999" required><br>
+  *Special Instructions: <br>
+  <textarea cols="60" rows="5" name="instructions" required></textarea><br>
   *Services: <br>
-  <input type="checkbox" value="service1"> haircut <br>
-  <input type="checkbox" value="service2"> hair treatment <br>
-  <input type="checkbox" value="service3"> nail trim <br>
+  <input type="radio" name="service" value="basic" required> Basic <br>
+  <input type="radio" name="service" value="deluxe"> Deluxe <br>
+  <input type="radio" name="service" value="deluxeplus"> Deluxe + <br>
   <input type="submit" value="SUBMIT"><input type="reset" value="RESET">
 </form>
 

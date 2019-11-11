@@ -5,8 +5,8 @@ dt {font-weight: bold;}
 
 ol, ul {list-style-position: outside;}
 
-table {border-collapse: collapse;}
-td, th {border-right: 1px solid white;}
+table {border-collapse: collapse; text-align: center;}
+td, th {border-right: 1px solid white; padding: .5em .5em;}
 th {background-color: LightCyan;}
 tr:nth-child(even){background-color: Gainsboro;}
 
