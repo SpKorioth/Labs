@@ -3,7 +3,11 @@
 <head>
 <title>A Dog's Life - Services</title>
 <link rel="stylesheet" href="dog.css"/>
-<meta charset="utf-8" name="viewport" content= "width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+<meta name="description" content="A Dog's Life pet grooming scheduling and information page. Affordable care at your convenience.">
+<meta name="keywords" content="dog,grooming,pet,wash,care,clean,schedule,appointment">
+<meta name="author" content="Spencer Korioth">
 </head>
 <body>
 <div id=wrapper>
@@ -56,10 +60,14 @@ Phasellus efficitur maximus convallis. Donec sed massa at ligula hendrerit rhonc
 
 <h3>Request an appointment</h3>
 <form action="http://webdevbasics.net/scripts/demo.php" method="post">
-  *Last Name: <input type="text" name="lastname" placeholder="Last Name" required><br>
-  *First Name: <input type="text" name="firstname" placeholder="First Name" required><br>
-  *Email: <input type="email" name="email" placeholder="email@email.com" required><br>
-  *Phone Number: <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="999-999-9999" required><br>
+  *Last Name: <input type="text" name="lastname" placeholder="Last Name" autocomplete="on" required><br>
+  *First Name: <input type="text" name="firstname" placeholder="First Name" autocomplete="on" required><br>
+  *Email: <input type="email" name="email" placeholder="email@email.com" autocomplete="on" required><br>
+  *Phone Number: (<input type="text" id="tel" name="phone1" pattern="[0-9]{3}" placeholder="999" maxlength="3" size="3" required>)
+  <input type="text" name="phone2" pattern="[0-9]{3}" placeholder="999" maxlength="3" size="3" required>-
+  <input type="text" name="phone3" pattern="[0-9]{4}" placeholder="9999" maxlength="4" size="4" required>
+  <br>
+
   Special Instructions: <br>
   <textarea cols="60" rows="5" name="instructions" placeholder="Please write any special instructions here."></textarea><br>
   *Services: <br>
